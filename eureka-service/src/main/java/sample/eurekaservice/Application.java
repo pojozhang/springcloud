@@ -1,6 +1,5 @@
-package sample.eureka;
+package sample.eurekaservice;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,5 +1,5 @@
 rootProject.name = "springcloud"
 
-include ":eureka",
+include ":eureka-service",
         ":user-service",
         ":book-service"
