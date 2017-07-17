@@ -9,5 +9,5 @@ import sample.bookservice.entity.User;
 public interface UserServiceClient {
 
     @GetMapping("users/{id}")
-    User getUser(@PathVariable Long id);
+    User getUser(@PathVariable("id") Long id);
 }
