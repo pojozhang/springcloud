@@ -11,3 +11,7 @@ eureka:
       enabled: true
   instance:
     prefer-ip-address: true
+
+logging:
+  level:
+    sample.bookservice.integration.UserServiceClient: DEBUG
