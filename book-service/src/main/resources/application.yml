@@ -15,3 +15,10 @@ eureka:
 logging:
   level:
     sample.bookservice.integration.UserServiceClient: DEBUG
+
+security.basic.enabled: true
+security.basic.path: /manager
+security.user.name: admin
+security.user.password: admin123
+management.security.enabled: true
+management.context-path: /manager
