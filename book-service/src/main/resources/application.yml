@@ -22,3 +22,7 @@ security.user.name: admin
 security.user.password: admin123
 management.security.enabled: true
 management.context-path: /manager
+
+feign:
+  hystrix:
+   enabled: true
