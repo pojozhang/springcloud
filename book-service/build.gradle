@@ -1,6 +1,8 @@
 dependencies {
     compile(
             "org.springframework.cloud:spring-cloud-starter-eureka-server",
-            "org.springframework.cloud:spring-cloud-starter-feign"
+            "org.springframework.cloud:spring-cloud-starter-feign",
+            "org.springframework.cloud:spring-cloud-starter-hystrix",
+            "org.springframework.boot:spring-boot-starter-security"
     )
 }
