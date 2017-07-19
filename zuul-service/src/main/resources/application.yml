@@ -23,3 +23,7 @@ management:
 
 zuul:
   prefix: /api
+  routes:
+    book-service-route:
+      service-id: book-service
+      path: /book-service/**
