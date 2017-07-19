@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/pojozhang/springcloud.git
-          search-paths: configurations
+          search-paths: configurations,configurations/*
 server:
   port: 8888
 
