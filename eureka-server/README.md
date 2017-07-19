@@ -1,4 +1,4 @@
-## Eureka service
+## Eureka server
 ### Steps to start 2 nodes
 #### 1. Add following lines to your hosts:**
 ```shell
@@ -8,6 +8,6 @@
 
 #### 2. Run with profile argument
 ```shell
-java -jar eureka-service.jar --spring.profiles.active=peer1
-java -jar eureka-service.jar --spring.profiles.active=peer2
+java -jar eureka-server.jar --spring.profiles.active=peer1
+java -jar eureka-server.jar --spring.profiles.active=peer2
 ```
