@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zuul-service
+server:
+  port: 8040
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
