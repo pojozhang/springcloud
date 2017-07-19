@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/pojozhang/springcloud.git
+          search-paths: configurations
+server:
+  port: 8888
+
