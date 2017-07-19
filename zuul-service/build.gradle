@@ -1,6 +1,7 @@
 dependencies {
     compile(
             "org.springframework.cloud:spring-cloud-starter-zuul",
-            "org.springframework.cloud:spring-cloud-starter-eureka-server"
+            "org.springframework.cloud:spring-cloud-starter-eureka-server",
+            "org.springframework.boot:spring-boot-starter-security"
     )
 }

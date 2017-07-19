@@ -3,7 +3,23 @@ spring:
     name: zuul-service
 server:
   port: 8040
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
+
+security:
+  basic:
+    enabled: true
+    path: /manager
+  user:
+    name: admin
+    password: admin123
+management:
+  security:
+    enabled: true
+  context-path: /manager
+
+zuul:
+  prefix: /api
