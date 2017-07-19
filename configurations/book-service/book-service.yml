@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: book-service
 server:
   port: 8081
 
