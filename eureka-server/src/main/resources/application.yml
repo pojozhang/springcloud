@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-service
+    name: eureka-server
 security:
   basic:
     enabled: true

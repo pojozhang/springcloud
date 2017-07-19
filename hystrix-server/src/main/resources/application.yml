@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hystrix-service
+    name: hystrix-server
 server:
   port: 8030
 eureka:

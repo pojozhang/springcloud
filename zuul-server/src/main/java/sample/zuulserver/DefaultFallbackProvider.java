@@ -1,4 +1,4 @@
-package sample.zuulservice;
+package sample.zuulserver;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

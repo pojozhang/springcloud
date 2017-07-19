@@ -3,6 +3,7 @@ dependencies {
             "org.springframework.cloud:spring-cloud-starter-eureka-server",
             "org.springframework.cloud:spring-cloud-starter-feign",
             "org.springframework.cloud:spring-cloud-starter-hystrix",
+            "org.springframework.cloud:spring-cloud-starter-config",
             "org.springframework.boot:spring-boot-starter-security"
     )
 }

@@ -1,4 +1,4 @@
-package sample.zuulservice.filter;
+package sample.zuulserver.filter;
 
 public interface FilterType {
 
