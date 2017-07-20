@@ -5,3 +5,5 @@ spring:
       max-request-size: 150Mb
 server:
   port: 8082
+
+eureka.client.healthcheck.enabled: true

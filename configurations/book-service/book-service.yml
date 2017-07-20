@@ -19,3 +19,5 @@ management:
 feign:
   hystrix:
    enabled: true
+
+eureka.client.healthcheck.enabled: true

@@ -10,9 +10,6 @@ spring:
         service-id: config-server
 
 eureka:
-  client:
-    healthcheck:
-      enabled: true
   instance:
     prefer-ip-address: true
 
