@@ -1,6 +1,6 @@
 spring:
   application:
-    name: user-service
+    name: file-service
   profiles:
     active: dev
   cloud:

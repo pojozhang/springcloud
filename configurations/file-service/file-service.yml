@@ -1,0 +1,7 @@
+spring:
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 150Mb
+server:
+  port: 8082

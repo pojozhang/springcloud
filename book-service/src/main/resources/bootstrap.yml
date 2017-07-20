@@ -2,7 +2,7 @@ spring:
   application:
     name: book-service
   profiles:
-        active: dev
+    active: dev
   cloud:
     config:
       discovery:

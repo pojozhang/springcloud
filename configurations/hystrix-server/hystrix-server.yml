@@ -1,0 +1,6 @@
+server:
+  port: 8030
+turbine:
+  appConfig: book-service, user-server
+  instanceUrlSuffix: /manager/hystrix.stream
+  clusterNameExpression: new String('default')
