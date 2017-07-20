@@ -2,6 +2,7 @@ dependencies {
     compile(
             "org.springframework.cloud:spring-cloud-starter-hystrix-dashboard",
             "org.springframework.cloud:spring-cloud-starter-turbine",
-            "org.springframework.cloud:spring-cloud-starter-config"
+            "org.springframework.cloud:spring-cloud-starter-config",
+            "org.springframework.boot:spring-boot-starter-security"
     )
 }

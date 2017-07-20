@@ -5,6 +5,8 @@ spring:
     active: dev
   cloud:
     config:
+      username: conf
+      password: conf123
       discovery:
         enabled: true
         service-id: config-server

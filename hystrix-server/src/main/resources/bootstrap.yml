@@ -5,14 +5,13 @@ spring:
     active: dev
   cloud:
     config:
+      username: conf
+      password: conf123
       discovery:
         enabled: true
         service-id: config-server
 
 eureka:
-  client:
-    healthcheck:
-      enabled: true
   instance:
     prefer-ip-address: true
 
