@@ -8,6 +8,11 @@ security:
     name: admin
     password: admin123
 
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
 ---
 spring:
   profiles: peer1
