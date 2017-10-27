@@ -1,5 +1,11 @@
 server:
   port: 8030
+
+security:
+  user:
+    name: admin
+    password: admin123
+
 turbine:
   appConfig: book-service, user-server
   instanceUrlSuffix: /manager/hystrix.stream
