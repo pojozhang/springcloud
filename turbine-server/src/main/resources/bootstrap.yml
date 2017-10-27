@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hystrix-server
+    name: turbine-server
   profiles:
     active: dev
   cloud:
