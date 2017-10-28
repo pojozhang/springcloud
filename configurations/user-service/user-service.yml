@@ -1,4 +1,19 @@
 server:
   port: 8080
 
+security:
+  basic:
+    enabled: true
+    path: /manager
+  user:
+    name: admin
+    password: admin123
+management:
+  security.enabled: true
+  context-path: /manager
+
+feign:
+  hystrix:
+   enabled: true
+
 eureka.client.healthcheck.enabled: true
