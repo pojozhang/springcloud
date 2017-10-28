@@ -4,6 +4,7 @@ include ":eureka-server",
         ":config-server",
         ":zuul-server",
         ":turbine-server",
+        ":admin-server",
         ":user-service",
         ":book-service",
         ":file-service"

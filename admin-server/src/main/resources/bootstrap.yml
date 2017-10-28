@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: admin-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      username: conf
+      password: conf123
+      failFast: true
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  instance:
+    prefer-ip-address: true
+
+---
+spring:
+  profiles: dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/

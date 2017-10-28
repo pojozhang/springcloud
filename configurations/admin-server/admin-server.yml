@@ -1,0 +1,15 @@
+server:
+  port: 8050
+
+security:
+  basic:
+    enabled: true
+    path: /manager
+  user:
+    name: admin
+    password: admin123
+management:
+  security.enabled: true
+  context-path: /manager
+
+eureka.client.healthcheck.enabled: true
