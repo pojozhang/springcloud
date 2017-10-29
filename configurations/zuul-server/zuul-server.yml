@@ -17,7 +17,11 @@ eureka:
   instance:
     healthCheckUrlPath: ${management.context-path}/health
     statusPageUrlPath: ${management.context-path}/info
-    metadata-map.management.context-path: ${management.context-path}
+    metadata-map:
+      management.context-path: ${management.context-path}
+      user:
+        name: ${security.user.name}
+        password: ${security.user.password}
   client.healthcheck.enabled: true
 
 zuul:
