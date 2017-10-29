@@ -13,6 +13,13 @@ management:
     enabled: true
   context-path: /manager
 
+eureka:
+  instance:
+    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${management.context-path}/info
+    metadata-map.management.context-path: ${management.context-path}
+  client.healthcheck.enabled: true
+
 zuul:
   prefix: /api
   routes:

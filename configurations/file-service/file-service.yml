@@ -21,4 +21,9 @@ feign:
   hystrix:
    enabled: true
 
-eureka.client.healthcheck.enabled: true
+eureka:
+  instance:
+    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${management.context-path}/info
+    metadata-map.management.context-path: ${management.context-path}
+  client.healthcheck.enabled: true
