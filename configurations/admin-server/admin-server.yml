@@ -1,11 +1,6 @@
 server:
   port: 8050
 
-spring.boot.admin:
-  auth:
-    username: admin
-    password: admin123
-
 security:
   basic:
     enabled: true
