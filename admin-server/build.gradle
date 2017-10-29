@@ -2,6 +2,7 @@ dependencies {
     compile(
             "de.codecentric:spring-boot-admin-server:$springBootAdminVersion",
             "de.codecentric:spring-boot-admin-server-ui:$springBootAdminVersion",
+            "de.codecentric:spring-boot-admin-server-ui-turbine:$springBootAdminVersion",
             "org.springframework.cloud:spring-cloud-starter-eureka-server",
             "org.springframework.cloud:spring-cloud-starter-config",
             "org.springframework.boot:spring-boot-starter-security"
