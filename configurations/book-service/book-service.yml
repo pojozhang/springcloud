@@ -21,5 +21,8 @@ feign:
    enabled: true
 
 eureka:
-  instance.metadata-map.management.context-path: ${management.context-path}
+  instance:
+    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${management.context-path}/info
+    metadata-map.management.context-path: ${management.context-path}
   client.healthcheck.enabled: true
