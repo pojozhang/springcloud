@@ -1,26 +1,47 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: config-server
+  profiles:
+    active: dev
   cloud:
     config:
       server:
         git:
           uri: https://github.com/pojozhang/springcloud.git
           search-paths: configurations,configurations/*
-server:
-  port: 8888
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
-  instance:
-    prefer-ip-address: true
 security:
   basic:
     enabled: true
   user:
     name: conf
     password: conf123
+management:
+  security.enabled: true
+  context-path: /manager
+
+eureka:
+  prefer-ip-address: true
+  instance:
+    healthCheckUrlPath: ${management.context-path}/health
+    statusPageUrlPath: ${management.context-path}/info
+    metadata-map:
+      management.context-path: ${management.context-path}
+      user:
+        name: ${security.user.name}
+        password: ${security.user.password}
+  client.healthcheck.enabled: true
+
+---
+spring:
+  profiles: dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin123@peer1:8761/eureka/,http://admin:admin123@peer2:8762/eureka/
 
 
