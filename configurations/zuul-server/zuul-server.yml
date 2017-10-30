@@ -26,6 +26,7 @@ eureka:
 
 zuul:
   prefix: /api
+  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     book-service-route:
       service-id: book-service
