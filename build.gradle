@@ -1,33 +1,11 @@
-buildscript {
-    repositories {
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-    }
-}
-
 subprojects {
-    repositories {
-        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
-    }
-
-    apply plugin: "org.springframework.boot"
-
-    dependencyManagement {
-        imports {
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+    buildscript {
+        repositories {
+            maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
         }
     }
 
-    dependencies {
-        compile(
-                "org.springframework.boot:spring-boot-starter-web",
-                "org.springframework.boot:spring-boot-starter-actuator"
-        )
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
     }
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = "4.2.1"
 }

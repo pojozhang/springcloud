@@ -1,10 +1,10 @@
 rootProject.name = "springcloud"
 
-include ":eureka-server",
-        ":config-server",
-        ":zuul-server",
-        ":turbine-server",
-        ":admin-server",
-        ":user-service",
-        ":book-service",
-        ":file-service"
+include ":v1:eureka-server",
+        ":v1:config-server",
+        ":v1:zuul-server",
+        ":v1:turbine-server",
+        ":v1:admin-server",
+        ":v1:user-service",
+        ":v1:book-service",
+        ":v1:file-service"
