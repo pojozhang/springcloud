@@ -7,4 +7,5 @@ include ":v1:eureka-server",
         ":v1:admin-server",
         ":v1:user-service",
         ":v1:book-service",
-        ":v1:file-service"
+        ":v1:file-service",
+        ":v2:user-service"

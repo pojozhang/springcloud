@@ -5,13 +5,9 @@ buildscript {
 }
 
 subprojects {
+    apply plugin: "java"
     apply plugin: "org.springframework.boot"
-
-    dependencyManagement {
-        imports {
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
-        }
-    }
+    apply plugin: "io.spring.dependency-management"
 
     dependencies {
         compile(
