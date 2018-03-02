@@ -11,7 +11,7 @@ spring:
       server:
         git:
           uri: https://github.com/pojozhang/springcloud.git
-          search-paths: configurations,configurations/*
+          search-paths: v1/configurations,v1/configurations/*
 
 security:
   basic:
