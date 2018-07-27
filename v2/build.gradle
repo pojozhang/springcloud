@@ -1,18 +1,17 @@
 buildscript {
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion2")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootV2")
     }
 }
 
 subprojects {
-    apply plugin: "java"
-    apply plugin: "org.springframework.boot"
-    apply plugin: "io.spring.dependency-management"
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
 
-    dependencies {
-        compile(
-                "org.springframework.boot:spring-boot-starter-web",
-                "org.springframework.boot:spring-boot-starter-actuator"
-        )
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudV2"
+        }
     }
 }
