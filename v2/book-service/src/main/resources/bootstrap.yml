@@ -1,11 +1,12 @@
 spring:
   application:
-    name: user-service
+    name: book-service
   sleuth:
     sampler:
-      probability: 1.0
+      percentage: 1.0
   zipkin:
     baseUrl: http://localhost:9411/
+
 
 management:
   endpoints:
@@ -14,3 +15,6 @@ management:
         include: "*"
 
 logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+server:
+  port: 8090

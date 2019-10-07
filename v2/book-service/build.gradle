@@ -5,6 +5,5 @@ dependencies {
             "org.springframework.cloud:spring-cloud-starter-sleuth",
             "org.springframework.cloud:spring-cloud-sleuth-zipkin",
             "org.springframework.cloud:spring-cloud-starter-consul-discovery",
-            "org.springframework.cloud:spring-cloud-starter-openfeign",
     )
 }

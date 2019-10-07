@@ -1,4 +1,4 @@
-package sample.userservice.entity;
+package v2.userservice.entity;
 
 public class User {
 
