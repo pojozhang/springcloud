@@ -9,6 +9,5 @@ include ":v1:eureka-server",
         ":v1:book-service",
         ":v1:file-service",
         ":v2:gateway",
-        ":v2:consul",
         ":v2:book-service",
         ":v2:user-service"
